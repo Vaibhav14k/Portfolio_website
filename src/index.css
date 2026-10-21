@@ -1,30 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "tailwindcss";
-*{
-  font-family: Saira,sens-serif;
+
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  color: #f5f5f7;
+  background: #080910;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
-@theme{
-  --color-dark-100:#1a1a1a;
-  --color-dark-200:#1f1f1f;
-  --color-dark-300:#2d2d2d;
-  --color-dark-400:#3d3d3d;
-  --color-purple:#885CF6;
-  --color-pink:#EC4899;
-  --color-blue:#3882F6;
+* {
+  box-sizing: border-box;
 }
-.typewriter {
-    overflow: hidden;
-    border-right: 0.15em solid #8B5CF6;
-    white-space: nowrap;
-    width: 0;
-    animation: typing 3s steps (20, end) forwards, blink-caret 0.75s step-end 4;
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(ellipse at 80% 5%, #28205a30, transparent 40%),
+    #080910;
 }
-@keyframes typing {
-    from { width: 0; }
-    to {width: 15ch; } /* Match the number of characters */
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
-@keyframes blink-caret{
-    from, to { border-color: transparent; }
-    50% {border-color:#885CF6; }
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #a78bfa;
+  color: #080910;
+}
+
+.section-wrap {
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.gradient-text {
+  background: linear-gradient(110deg, #c4b5fd, #818cf8 50%, #67e8f9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass-card {
+  background: linear-gradient(145deg, #ffffff0b, #ffffff03);
+  border: 1px solid #ffffff12;
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+}
+
+html {
+  scroll-padding-top: 90px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
