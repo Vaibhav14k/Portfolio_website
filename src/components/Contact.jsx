@@ -32,6 +32,8 @@ export default function Contact() {
           </a>
           <p className="mt-4 text-xs text-gray-500">
             vaibhavkangane1424@gmail.com
+            <br />
+            mobile no - 7620358577
           </p>
         </div>
       </div>

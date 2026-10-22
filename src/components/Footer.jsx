@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="border-t border-white/10">
       <div className="section-wrap flex flex-col items-center justify-between gap-4 py-7 text-sm text-gray-500 sm:flex-row">
         <p>
-          © {new Date().getFullYear()} Vaibhav Kangane. Built with React.
+          © {new Date().getFullYear()} Vaibhav Kangane.
         </p>
         <a
           href="#home"
