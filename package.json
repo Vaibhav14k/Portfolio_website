@@ -13,7 +13,6 @@
     "22": "^0.0.0",
     "@react-three/drei": "^10.7.9",
     "@react-three/fiber": "^9.8.2",
-    "@rolldown/binding-win32-x64-msvc": "^1.0.0-rc.16",
     "@tailwindcss/vite": "^4.3.3",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.61.0",
